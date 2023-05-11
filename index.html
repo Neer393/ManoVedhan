@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ManoVedhan</title>
+</head>
+<body>
+    <div id="main-container">
+        <form action="" id="main-form">
+            <div id="heading">
+                <p id="child">Child</p>
+                <p id="medical-history-form">Medical History Form</p>
+            </div>
+            <div id="newbg">
+                <div id="personal-details">
+                    <div id="name">
+                        <label for="fullname">Full name : </label>
+                        <input type="text" name="fullname" id="full-name">
+                    </div>
+                    <div id="dob">
+                        <span id="dobentry">
+                            <label for="dateofbirth">Date of birth : </label>
+                            <input type="date" name="dateofbirth" id="date-of-birth" max="2023-05-01">
+                        </span> 
+                        <span id="gender">
+                            <label for="sex">Sex : </label>
+                            <label for="male">Male</label>
+                            <input type="radio" name="sex" id="male">&nbsp;&nbsp;&nbsp;
+                            <label for="female">Female</label>
+                            <input type="radio" name="sex" id="female">
+                        </span>
+                    </div>
+                    <div id="address-holder">
+                        <label for="address">Address : </label>
+                        <input type="text" name="address" id="my-address">
+                    </div>
+                    <div id="tele">
+                        <span id="telephone">
+                            <label for="teleph">Tel no :</label>
+                            <input type="tel" name="teleph" id="telephone-num" pattern="[0-9]{10}">
+                        </span>
+                        <span id="parent-telephone">
+                            <label for="teleph-2">Parent/Guardian mob no :</label>
+                            <input type="tel" name="teleph-2" id="telephone-num2" pattern="[0-9]{10}">
+                        </span>
+                    </div>
+                    <div id="parent-email">
+                        <label for="emailadd">Parent/Guardian email : </label>
+                        <input type="email" name="emailadd" id="e-address">
+                    </div>
+                    <div id="contact">
+                        <label for="contact-us">Are you happy for us to contact you by : </label>&nbsp;&nbsp;&nbsp;
+                        <label for="txt">Text</label>
+                        <input type="checkbox" name="txt" id="text">&nbsp;&nbsp;&nbsp;
+                        <label for="phn">Phone</label>
+                        <input type="checkbox" name="phn" id="phone">&nbsp;&nbsp;&nbsp;
+                        <label for="ema">Email</label>
+                        <input type="checkbox" name="ema" id="email-id">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        ( Please tick all that apply )
+                    </div>
+                </div>
+                <h3>Doctor's details : </h3>
+                <div id="doctor-details">
+                    <div id="doc-tele">
+                        <span id="doc-name">
+                            <label for="doc-fullname">Full name : </label>
+                            <input type="text" name="doc-fullname" id="doc-full-name">
+                        </span>
+                        <span id="doc-telephone">
+                            <label for="doc-teleph">Tel no :</label>
+                            <input type="tel" name="doc-teleph" id="doc-telephone-num" pattern="[0-9]{10}">
+                        </span>
+                    </div>
+                    <div id="address-holder">
+                        <label for="address">Address : </label>
+                        <input type="text" name="address" id="my-address">
+                    </div>
+                </div>
+                <h3>Is your child currently :</h3>
+                <div id="q1">
+                    <span id="q11">
+                        <label for="receiving-treatement">Receiving treatment from the doctor?</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="yes">Yes</label>&nbsp;
+                        <input type="radio" name="receiving-treatement" id="yesq11">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="no">No</label>&nbsp;
+                        <input type="radio" name="receiving-treatement" id="noq11">
+                    </span>
+                    <span id="q12">
+                        <label for="taking-medicine">Taking medication?</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="yes">Yes</label>&nbsp;
+                        <input type="radio" name="receiving-treatement" id="yesq12">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="no">No</label>&nbsp;
+                        <input type="radio" name="receiving-treatement" id="noq12">
+                    </span>
+                </div>
+                <h3>Has your child ever suffered from : </h3>
+                <div id="q2">
+                    <span id="q21">
+                        <label for="allergies">Allergies to medicines?</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="yes">Yes</label>&nbsp;
+                        <input type="radio" name="allergies" id="yesq21">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="no">No</label>&nbsp;
+                        <input type="radio" name="allergies" id="noq21">
+                    </span>
+                    <span id="q22">
+                        <label for="serious-illness">Any serious illness?</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="yes">Yes</label>&nbsp;
+                        <input type="radio" name="serious-illness" id="yesq22">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="no">No</label>&nbsp;
+                        <input type="radio" name="serious-illness" id="noq22">
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        const date_ele = document.getElementById("date-of-birth");
+        date_ele.max = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>

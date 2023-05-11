@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+#heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #840126;
+    color: white;
+    width: 100%;
+    padding-left: 0.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#main-form{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+#child{
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+#medical-history-form{
+    font-size: 2.5rem;
+    font-weight: 50;
+}
+#personal-details{
+    background-color: white;
+    /* padding-left: 0.5rem; */
+}
+#newbg{
+    background-color: #f0ded9;
+    padding: 1rem;
+}
+#full-name{
+    border: none;
+    width: 92%;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+}
+#doc-full-name,#doc-telephone-num{
+    border: none;
+    width: 350px;
+}
+input:focus{
+    outline: none;
+}
+#full-name:focus,#doc-full-name:focus{
+    outline: none;
+}
+#name{
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+    padding-left: 0.5rem;
+}
+#dob,#doc-tele,#q11,#q12,#q21,#q22{
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.2rem;
+}
+#dobentry,#doc-name{
+    width: 60%;
+}
+#dobentry>input{
+    margin-left: 0.5rem;
+}
+#address-holder,#parent-email{
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.2rem;
+}
+#my-address{
+    border: none;
+    width: 92%;
+    font-size: 1.1rem;
+    padding: 0.2rem;
+}
+#my-address:focus,#telephone-num:focus,#telephone-num2:focus,#e-address:focus{
+    outline: none;
+}
+#telephone-num,#telephone-num2,#e-address{
+    border: none;
+}
+#e-address{
+    width: 80%;
+}
+#tele{
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.2rem;
+}
+#contact{
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+#telephone{
+    width: 50%;
+}
+
+#doctor-details,#q1,#q2{
+    background-color: white;
+}
+h3{
+    color: red;
+    margin-top: 1rem;
+}
+
+
