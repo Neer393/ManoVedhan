@@ -118,5 +118,12 @@ h3{
     color: red;
     margin-top: 1rem;
 }
-
-
+#sub{
+    width: 10%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.3rem 1rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #840126;
+}
